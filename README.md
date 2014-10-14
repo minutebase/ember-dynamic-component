@@ -36,6 +36,26 @@ Any other properties and actions given to the helper will be passed through to t
 }}
 ```
 
+This means the following:
+
+```
+{{#if showFoo}}
+  {{x-foo onClick="thingClicked" value=something}}
+{{/if}}
+{{#if showBar}}
+  {{x-bar onClick="thingClicked" value=something}}
+{{/if}}
+{{#if showBaz}}
+  {{x-baz onClick="thingClicked" value=something}}
+{{/if}}
+```
+
+... is essentially the same as:
+
+```
+{{dynamic-component type=type onClick="thingClicked" value=something}}
+```
+
 ## Developing
 
 ### Installation
