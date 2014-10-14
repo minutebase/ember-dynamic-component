@@ -2,10 +2,6 @@
 
 An Ember CLI addon to render a dynamic component.
 
-## Note
-
-This is a work in progress, it will be published to NPM shortly (once I've written some tests).
-
 ## Using
 
 ### Installation
