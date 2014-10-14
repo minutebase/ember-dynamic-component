@@ -1,7 +1,7 @@
 {
   "name": "ember-dynamic-component",
   "description": "Ember CLI addon to render a dynamic component",
-  "version": "0.0.1-pre",
+  "version": "0.0.1",
   "directories": {
     "doc": "doc",
     "test": "tests"
