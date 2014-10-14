@@ -38,7 +38,7 @@ Any other properties and actions given to the helper will be passed through to t
 
 This means the following:
 
-```
+```handlebars
 {{#if showFoo}}
   {{x-foo onClick="thingClicked" value=something}}
 {{/if}}
@@ -52,7 +52,7 @@ This means the following:
 
 ... is essentially the same as:
 
-```
+```handlebars
 {{dynamic-component type=type onClick="thingClicked" value=something}}
 ```
 
