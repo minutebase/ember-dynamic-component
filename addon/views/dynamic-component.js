@@ -23,7 +23,7 @@ export default Ember.ContainerView.extend(Ember._Metamorph, {
     var componentLookup = container.lookup('component-lookup:main');
     var customComponent = componentLookup.lookupFactory(type, container);
 
-    var options = this.get("_dynamicOptions");
+    var options = get(this, "_dynamicOptions");
     var hash    = options.hash;
     var ignore  = ["templateData", "_dynamicOptions", "_context", "_parentView", "helperName", "container"];
     var props   = {};
