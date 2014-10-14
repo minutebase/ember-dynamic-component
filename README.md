@@ -28,7 +28,12 @@ changes then the correct component will be rendered:
 Any other properties and actions given to the helper will be passed through to the underlying component:
 
 ```handlebars
-{{dynamic-component type=theType boundProperty=foo staticProperty="bar" onFoo="fooTriggered"}}
+{{dynamic-component
+  type=theType
+  boundProperty=foo
+  staticProperty="bar"
+  onFoo="fooTriggered"
+}}
 ```
 
 ## Developing
