@@ -26,7 +26,6 @@ export default Ember.ContainerView.extend(Ember._Metamorph, {
 
     var options = this.get("_dynamicOptions");
     var hash    = options.hash;
-    var types   = options.hashTypes;
 
     var ignore = ["templateData", "_dynamicOptions", "_context", "_parentView", "helperName", "container"];
     var props = {};
@@ -41,6 +40,8 @@ export default Ember.ContainerView.extend(Ember._Metamorph, {
         props[prop] = hash[prop];
       }
     }
+
+    console.log(props);
 
     return customComponent.create(props);
   }

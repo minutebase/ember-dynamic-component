@@ -3,13 +3,13 @@
 <p>Showing component {{type}}</p>
 
 <p>
-  {{input value=dynamicValue}}
+  {{input value=dynamicValue name="dynamic-value"}}
 </p>
 
 <div>
   {{dynamic-component type=type dynamicValue=dynamicValue staticValue="static" anAction="componentAction"}}
 </div>
 
-<button {{action "changeType" "x-foo"}}>x-foo</button>
-<button {{action "changeType" "x-bar"}}>x-bar</button>
-<button {{action "changeType" "x-baz"}}>x-baz</button>
+<button class="x-foo-button" {{action "changeType" "x-foo"}}>x-foo</button>
+<button class="x-bar-button" {{action "changeType" "x-bar"}}>x-bar</button>
+<button class="x-baz-button" {{action "changeType" "x-baz"}}>x-baz</button>
