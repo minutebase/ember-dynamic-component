@@ -1,3 +1,15 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<h2 id='title'>Ember dynamic-component</h2>
 
-{{outlet}}
+<p>Showing component {{type}}</p>
+
+<p>
+  {{input value=dynamicValue}}
+</p>
+
+<div>
+  {{dynamic-component type=type dynamicValue=dynamicValue staticValue="static" anAction="componentAction"}}
+</div>
+
+<button {{action "changeType" "x-foo"}}>x-foo</button>
+<button {{action "changeType" "x-bar"}}>x-bar</button>
+<button {{action "changeType" "x-baz"}}>x-baz</button>

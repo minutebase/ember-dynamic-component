@@ -1,6 +1,7 @@
 {
   "name": "ember-dynamic-component",
-  "version": "0.0.0",
+  "description": "Ember CLI addon to render a dynamic component",
+  "version": "0.0.1-pre",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -10,11 +11,14 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/minutebase/ember-dynamic-component",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": {
+    "name": "Richard Livsey",
+    "email": "richard@minutebase.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "body-parser": "^1.2.0",
@@ -30,7 +34,9 @@
     "glob": "^4.0.5"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "dynamic",
+    "component"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
