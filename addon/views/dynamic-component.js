@@ -1,19 +1,19 @@
 import Ember from 'ember';
 
 var get      = Ember.get;
-var computed = Ember.computed;
 var observer = Ember.observer;
+var on       = Ember.on;
 
 export default Ember.ContainerView.extend(Ember._Metamorph, {
   type: null,
 
-  childViews: computed(function() {
-    return [this.componentForType()];
+  _changeChild: on('init', function() {
+    this.clear();
+    this.pushObject(this.componentForType());
   }),
 
   changeChild: observer('type', function() {
-    this.clear();
-    this.pushObject(this.componentForType());
+    this._changeChild();
   }),
 
   componentForType: function() {
