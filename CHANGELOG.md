@@ -2,6 +2,8 @@
 
 ## Master
 
+## v0.0.3
+
 * HTMLBars support
 
 ## v0.0.2
