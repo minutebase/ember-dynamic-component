@@ -2,6 +2,10 @@
 
 ## Master
 
+## v0.0.4
+
+* use createChildView to create component
+
 ## v0.0.3
 
 * HTMLBars support
