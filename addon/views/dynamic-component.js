@@ -38,6 +38,6 @@ export default Ember.ContainerView.extend(Ember._Metamorph, {
       }
     }
 
-    return customComponent.create(props);
+    return this.createChildView(customComponent, props);
   }
 });
