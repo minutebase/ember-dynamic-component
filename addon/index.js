@@ -1,3 +1,5 @@
-import DynamicComponentView from './views/dynamic-component';
+import DCV from './views/dynamic-component';
+
+var DynamicComponentView = DCV;
 
 export { DynamicComponentView };
