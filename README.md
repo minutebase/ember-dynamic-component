@@ -2,6 +2,9 @@
 
 An Ember CLI addon to render a dynamic component.
 
+## NOTE: Deprecation coming soon
+As of [http://github.com/emberjs/ember.js#10093](http://github.com/emberjs/ember.js#10093), there is a corresponding system built into Ember with full support.  This change should land in Ember 1.11.  At that point this component will be deprecated.
+
 ## Using
 
 ### Installation
